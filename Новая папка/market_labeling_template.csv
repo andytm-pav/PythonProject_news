@@ -1,0 +1,3 @@
+index,title,detected_sectors,expected_sentiment,sector
+0,"ЦБ повысил ставку",Индустриальный,negative,Индустриальный
+1,"Нефть дорожает",Энергетика,positive,Энергетика

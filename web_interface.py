@@ -152,4 +152,3 @@ class WebInterface:
 
         print(f"🚀 Веб-интерфейс доступен по адресу: http://{host}:{port}")
         app.run(host=host, port=port, debug=False, use_reloader=False)
-

@@ -2,6 +2,7 @@ import numpy as np
 
 import library as l
 
+
 # ==================== КЛАСС АНАЛИЗА НОВОСТЕЙ ====================
 class NewsAnalyzer:
     def __init__(self):

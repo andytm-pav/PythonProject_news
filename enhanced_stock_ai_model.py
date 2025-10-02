@@ -192,7 +192,7 @@ class EnhancedStockAIModel:
             self.is_trained = False
             return False
 
-    def train_models(self, prices_df, news_sentiment_by_date, incremental=True):
+    def train_models(self, prices_df, news_sentiment_by_date, incremental=False):
         """Улучшенное обучение моделей с поддержкой дообучения"""
         try:
             print("🔄 Запуск обучения моделей...")

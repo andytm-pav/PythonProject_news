@@ -48,8 +48,7 @@ class VirtualPortfolio:
                     self.cash -= cost
                     if ticker in self.positions:
                         self.positions[ticker]['quantity'] += quantity
-                        self.positions[ticker]['avg_price'] = (
-                                                                      self.positions[ticker]['avg_price'] + price) / 2
+                        self.positions[ticker]['avg_price'] = (self.positions[ticker]['avg_price'] + price) / 2
                     else:
                         self.positions[ticker] = {
                             'quantity': quantity,

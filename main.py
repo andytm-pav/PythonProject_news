@@ -66,6 +66,9 @@ class EnhancedStockAnalysisSystem:
 
             # Определяем тип обучения: дообучение если модель уже обучена
             incremental_learning = self.enhanced_ai_model.is_trained
+
+            print(f'incremental_learning - дообучение >>>>>>>>>>>>>>>>>>>>>      {incremental_learning}')
+
             training_successful = self.enhanced_ai_model.train_models(
                 prices_df,
                 news_sentiment_by_date,

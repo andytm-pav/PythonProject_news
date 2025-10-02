@@ -1,2 +1,5 @@
 *.csv
 *.json
+/dist/
+/build/
+/tttest.spec

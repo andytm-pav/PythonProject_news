@@ -1,3 +1,9 @@
+# pip install PyInstaller
+# pip install --upgrade PyInstaller pyinstaller-hooks-contrib
+
+# pyinstaller --onefile --name tttest main.py
+
+
 import threading
 import time
 import traceback

@@ -2,4 +2,4 @@
 *.json
 /dist/
 /build/
-/tttest.spec
+/*.spec

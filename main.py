@@ -1,7 +1,7 @@
 # pip install PyInstaller
 # pip install --upgrade PyInstaller pyinstaller-hooks-contrib
 
-# pyinstaller --onefile --name tttest main.py
+# pyinstaller --onefile --name analyzer main.py
 
 
 import threading

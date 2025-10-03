@@ -21,7 +21,7 @@ from enhanced_stock_ai_model import EnhancedStockAIModel
 from portfolio_rebalancer import PortfolioRebalancer
 from virtual_portfolio import VirtualPortfolio
 from web_interface import WebInterface
-
+# from enhanced_stock_ai_model import get_sector_analysis
 warnings.filterwarnings('ignore')
 
 
@@ -176,6 +176,8 @@ class EnhancedStockAnalysisSystem:
 
         print("✅ АНАЛИЗ ЗАВЕРШЕН!")
 
+
+
     def save_backup_data(self, news_df, prices_df, recommendations):
         """Сохранение резервных копий данных"""
         try:
@@ -232,4 +234,4 @@ class EnhancedStockAnalysisSystem:
 # ==================== ЗАПУСК ПРОГРАММЫ ====================
 if __name__ == "__main__":
     system = EnhancedStockAnalysisSystem()
-    system.run_continuous_analysis(interval_minutes=1)
+    system.run_continuous_analysis(interval_minutes=0)

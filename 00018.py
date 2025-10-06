@@ -55,6 +55,7 @@ RUSSIAN_FEEDS = {
     "Инвестирование ком сырьё": "https://ru.investing.com/rss/news_11.rss",
     "Инвестирование ком Экономики": "https://ru.investing.com/rss/news_14.rss",
     "Инвестирование ком фондовый": "https://ru.investing.com/rss/news_25.rss",
+    "ФинМаркет": "https://www.finmarket.ru/rss/mainnews.asp"
 }
 
 
@@ -1365,7 +1366,7 @@ class EnhancedStockAnalysisSystem:
         except Exception as e:
             print(f"Ошибка сохранения данных: {e}")
 
-    def run_continuous_analysis(self, interval_minutes=60):
+    def run_continuous_analysis(self, interval_minutes=15):
         """Запуск непрерывного анализа"""
         print("🚀 Запуск улучшенной системы анализа российских акций с ИИ...")
         print(f"💰 Начальный капитал: ₽{self.portfolio.initial_cash:,.0f}")
@@ -1382,7 +1383,7 @@ class EnhancedStockAnalysisSystem:
 
                 if success:
                     print(f"\n♻️ Цикл {cycle_count} завершен. Ожидание {interval_minutes} минут...")
-                    wait_seconds = interval_minutes * 60
+                    wait_seconds = interval_minutes * 15
                     for i in range(wait_seconds):
                         if not self.web_interface.is_running:
                             break

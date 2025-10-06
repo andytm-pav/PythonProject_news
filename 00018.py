@@ -1405,4 +1405,4 @@ class EnhancedStockAnalysisSystem:
 # ==================== ЗАПУСК ПРОГРАММЫ ====================
 if __name__ == "__main__":
     system = EnhancedStockAnalysisSystem()
-    system.run_continuous_analysis(interval_minutes=60)
+    system.run_continuous_analysis(interval_minutes=15)

@@ -28,7 +28,7 @@ from logging.handlers import RotatingFileHandler
 import hashlib
 from functools import wraps
 import asyncio
-import aiohttp
+#import aiohttp
 import concurrent.futures
 
 from news_analyzer import NewsAnalyzer
